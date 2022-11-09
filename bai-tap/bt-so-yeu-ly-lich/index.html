@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .all {
+            width: 710px;
+            height: 550px;
+            background: rgb(187, 189, 103);
+            padding-left: 50px;
+            padding-top: 50px;
+            border-radius: 50px;
+            margin-left: 300px;
+        }
+        .all h2 {
+            padding-top: 20px;
+            padding-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .all p{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-left: 30px ;
+        }
+
+        header {
+            width: 600px;
+            background-color: rgb(198, 221, 217);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            border-radius: 10px;
+        }
+        h3 {
+            text-align: center;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <header>
+            <h1>Sơ yếu lý lịch</h1>
+        </header>
+        <div>
+            <h2>--Thông tin cá nhân--</h2>
+            <p>Họ và tên : <b><span id="name"></span></b></p>
+            <p>Tuổi : <u><span id="age"></span></u></p>
+            <p>Giới tính : <span id="gender"></span></p>
+            <hr>
+            <h2>--Trình độ học vấn--</h2>
+            <p>Văn hóa : </p>
+            <p>Học vấn : </p>
+            <hr>
+            <h2>--Nghề Nghiệp--</h2>
+            <p>Công việc 1 : </p>
+            <p>Công việc 2 : </p>
+            <h3><button onclick="myfonction()">NHẬP</button></h3>
+            <script>
+                function myfonction(){
+                    var lastname = prompt ("Ho va Ten")
+                    document.getElementById("name").innerHTML=lastname
+                    var age = prompt("Tuoi")
+                    document.getElementById("age").innerHTML = age
+                    var gender = prompt("Gioi Tinh")
+                    document.getElementById("gender").innerHTML = gender
+                }
+            </script>
+        </div>
+    </div>
+    <div>
+
+    </div>
+</body>
+
+</html>
